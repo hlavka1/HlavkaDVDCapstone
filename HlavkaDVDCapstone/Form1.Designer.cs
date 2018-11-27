@@ -52,6 +52,7 @@ namespace HlavkaDVDCapstone
             this.btn_DisplayDetails = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_DVDDatabase = new System.Windows.Forms.Label();
+            this.TestForGit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet)).BeginInit();
@@ -144,9 +145,19 @@ namespace HlavkaDVDCapstone
             this.lbl_DVDDatabase.TabIndex = 3;
             this.lbl_DVDDatabase.Text = "Hlavka DVD Database";
             // 
+            // TestForGit
+            // 
+            this.TestForGit.Location = new System.Drawing.Point(373, 682);
+            this.TestForGit.Name = "TestForGit";
+            this.TestForGit.Size = new System.Drawing.Size(156, 108);
+            this.TestForGit.TabIndex = 4;
+            this.TestForGit.Text = "TestForGit";
+            this.TestForGit.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(971, 835);
+            this.Controls.Add(this.TestForGit);
             this.Controls.Add(this.lbl_DVDDatabase);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_DisplayDetails);
@@ -189,6 +200,7 @@ namespace HlavkaDVDCapstone
         private Button btn_DisplayDetails;
         private Button btn_Exit;
         private Label lbl_DVDDatabase;
+        private Button TestForGit;
         // private Database4DataSet2TableAdapters.Sheet1TableAdapter sheet1TableAdapter1;
     }
 }
