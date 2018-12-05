@@ -54,13 +54,14 @@
             // 
             // btn_Exit
             // 
+            this.btn_Exit.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_Exit.Font = new System.Drawing.Font("Baskerville Old Face", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.Location = new System.Drawing.Point(343, 754);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(359, 80);
             this.btn_Exit.TabIndex = 2;
             this.btn_Exit.Text = "Exit";
-            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.UseVisualStyleBackColor = false;
             this.btn_Exit.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtbx_DVDTitle
@@ -155,6 +156,7 @@
             // 
             // DetailForm
             // 
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1076, 881);
             this.Controls.Add(this.lbl_Sequel);
             this.Controls.Add(this.lbl_Length);
