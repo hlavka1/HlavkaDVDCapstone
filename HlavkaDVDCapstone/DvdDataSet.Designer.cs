@@ -20,9 +20,9 @@ namespace HlavkaDVDCapstone {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Database4DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DvdDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Database4DataSet1 : global::System.Data.DataSet {
+    public partial class DvdDataSet : global::System.Data.DataSet {
         
         private Sheet1DataTable tableSheet1;
         
@@ -30,7 +30,7 @@ namespace HlavkaDVDCapstone {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public Database4DataSet1() {
+        public DvdDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace HlavkaDVDCapstone {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected Database4DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DvdDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace HlavkaDVDCapstone {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Database4DataSet1 cln = ((Database4DataSet1)(base.Clone()));
+            DvdDataSet cln = ((DvdDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace HlavkaDVDCapstone {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Database4DataSet1";
+            this.DataSetName = "DvdDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Database4DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/DvdDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableSheet1 = new Sheet1DataTable();
@@ -225,7 +225,7 @@ namespace HlavkaDVDCapstone {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Database4DataSet1 ds = new Database4DataSet1();
+            DvdDataSet ds = new DvdDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -281,15 +281,15 @@ namespace HlavkaDVDCapstone {
             
             private global::System.Data.DataColumn columnID;
             
+            private global::System.Data.DataColumn columnActor;
+            
             private global::System.Data.DataColumn columnSequel;
             
-            private global::System.Data.DataColumn columnDVD_Title;
+            private global::System.Data.DataColumn columnTitle;
             
             private global::System.Data.DataColumn columnLength;
             
             private global::System.Data.DataColumn columnYear;
-            
-            private global::System.Data.DataColumn columnLead_Actor;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -334,6 +334,14 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn ActorColumn {
+                get {
+                    return this.columnActor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public global::System.Data.DataColumn SequelColumn {
                 get {
                     return this.columnSequel;
@@ -342,9 +350,9 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn DVD_TitleColumn {
+            public global::System.Data.DataColumn TitleColumn {
                 get {
-                    return this.columnDVD_Title;
+                    return this.columnTitle;
                 }
             }
             
@@ -361,14 +369,6 @@ namespace HlavkaDVDCapstone {
             public global::System.Data.DataColumn YearColumn {
                 get {
                     return this.columnYear;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn Lead_ActorColumn {
-                get {
-                    return this.columnLead_Actor;
                 }
             }
             
@@ -409,15 +409,15 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public Sheet1Row AddSheet1Row(bool Sequel, string DVD_Title, string Length, double Year, string Lead_Actor) {
+            public Sheet1Row AddSheet1Row(string Actor, bool Sequel, string Title, string Length, double Year) {
                 Sheet1Row rowSheet1Row = ((Sheet1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
+                        Actor,
                         Sequel,
-                        DVD_Title,
+                        Title,
                         Length,
-                        Year,
-                        Lead_Actor};
+                        Year};
                 rowSheet1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSheet1Row);
                 return rowSheet1Row;
@@ -448,11 +448,11 @@ namespace HlavkaDVDCapstone {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
+                this.columnActor = base.Columns["Actor"];
                 this.columnSequel = base.Columns["Sequel"];
-                this.columnDVD_Title = base.Columns["DVD Title"];
+                this.columnTitle = base.Columns["Title"];
                 this.columnLength = base.Columns["Length"];
                 this.columnYear = base.Columns["Year"];
-                this.columnLead_Actor = base.Columns["Lead Actor"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -460,16 +460,16 @@ namespace HlavkaDVDCapstone {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
+                this.columnActor = new global::System.Data.DataColumn("Actor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnActor);
                 this.columnSequel = new global::System.Data.DataColumn("Sequel", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSequel);
-                this.columnDVD_Title = new global::System.Data.DataColumn("DVD Title", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDVD_Title);
+                this.columnTitle = new global::System.Data.DataColumn("Title", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTitle);
                 this.columnLength = new global::System.Data.DataColumn("Length", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLength);
                 this.columnYear = new global::System.Data.DataColumn("Year", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnYear);
-                this.columnLead_Actor = new global::System.Data.DataColumn("Lead Actor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLead_Actor);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -477,9 +477,9 @@ namespace HlavkaDVDCapstone {
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.columnDVD_Title.MaxLength = 255;
+                this.columnActor.MaxLength = 255;
+                this.columnTitle.MaxLength = 255;
                 this.columnLength.MaxLength = 255;
-                this.columnLead_Actor.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -547,7 +547,7 @@ namespace HlavkaDVDCapstone {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Database4DataSet1 ds = new Database4DataSet1();
+                DvdDataSet ds = new DvdDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -633,6 +633,22 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Actor {
+                get {
+                    try {
+                        return ((string)(this[this.tableSheet1.ActorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Actor\' in table \'Sheet1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSheet1.ActorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Sequel {
                 get {
                     try {
@@ -649,17 +665,17 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string DVD_Title {
+            public string Title {
                 get {
                     try {
-                        return ((string)(this[this.tableSheet1.DVD_TitleColumn]));
+                        return ((string)(this[this.tableSheet1.TitleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DVD Title\' in table \'Sheet1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Title\' in table \'Sheet1\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSheet1.DVD_TitleColumn] = value;
+                    this[this.tableSheet1.TitleColumn] = value;
                 }
             }
             
@@ -697,18 +713,14 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Lead_Actor {
-                get {
-                    try {
-                        return ((string)(this[this.tableSheet1.Lead_ActorColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Lead Actor\' in table \'Sheet1\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSheet1.Lead_ActorColumn] = value;
-                }
+            public bool IsActorNull() {
+                return this.IsNull(this.tableSheet1.ActorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetActorNull() {
+                this[this.tableSheet1.ActorColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -725,14 +737,14 @@ namespace HlavkaDVDCapstone {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsDVD_TitleNull() {
-                return this.IsNull(this.tableSheet1.DVD_TitleColumn);
+            public bool IsTitleNull() {
+                return this.IsNull(this.tableSheet1.TitleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetDVD_TitleNull() {
-                this[this.tableSheet1.DVD_TitleColumn] = global::System.Convert.DBNull;
+            public void SetTitleNull() {
+                this[this.tableSheet1.TitleColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -757,18 +769,6 @@ namespace HlavkaDVDCapstone {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetYearNull() {
                 this[this.tableSheet1.YearColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsLead_ActorNull() {
-                return this.IsNull(this.tableSheet1.Lead_ActorColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetLead_ActorNull() {
-                this[this.tableSheet1.Lead_ActorColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -807,7 +807,7 @@ namespace HlavkaDVDCapstone {
         }
     }
 }
-namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
+namespace HlavkaDVDCapstone.DvdDataSetTableAdapters {
     
     
     /// <summary>
@@ -932,57 +932,57 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Sheet1";
             tableMapping.ColumnMappings.Add("ID", "ID");
+            tableMapping.ColumnMappings.Add("Actor", "Actor");
             tableMapping.ColumnMappings.Add("Sequel", "Sequel");
-            tableMapping.ColumnMappings.Add("DVD Title", "DVD Title");
+            tableMapping.ColumnMappings.Add("Title", "Title");
             tableMapping.ColumnMappings.Add("Length", "Length");
             tableMapping.ColumnMappings.Add("Year", "Year");
-            tableMapping.ColumnMappings.Add("Lead Actor", "Lead Actor");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Sheet1` WHERE ((`ID` = ?) AND ((? = 1 AND `Sequel` IS NULL) OR (`Sequel` = ?)) AND ((? = 1 AND `DVD Title` IS NULL) OR (`DVD Title` = ?)) AND ((? = 1 AND `Length` IS NULL) OR (`Length` = ?)) AND ((? = 1 AND `Year` IS NULL) OR (`Year` = ?)) AND ((? = 1 AND `Lead Actor` IS NULL) OR (`Lead Actor` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Sheet1` WHERE ((`ID` = ?) AND ((? = 1 AND `Actor` IS NULL) OR (`Actor` = ?)) AND ((? = 1 AND `Sequel` IS NULL) OR (`Sequel` = ?)) AND ((? = 1 AND `Title` IS NULL) OR (`Title` = ?)) AND ((? = 1 AND `Length` IS NULL) OR (`Length` = ?)) AND ((? = 1 AND `Year` IS NULL) OR (`Year` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Actor", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Actor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Actor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Sequel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Sequel", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Sequel", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Sequel", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_DVD_Title", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DVD Title", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_DVD_Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DVD Title", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Title", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Title", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Title", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Length", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Length", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Length", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Length", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Year", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Year", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Lead_Actor", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Lead Actor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Lead_Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Lead Actor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Sheet1` (`Sequel`, `DVD Title`, `Length`, `Year`, `Lead Actor`) VALU" +
-                "ES (?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Sheet1` (`Actor`, `Sequel`, `Title`, `Length`, `Year`) VALUES (?, ?," +
+                " ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Actor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Sequel", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Sequel", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DVD_Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DVD Title", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Title", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Length", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Length", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Year", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Lead_Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Lead Actor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Sheet1` SET `Sequel` = ?, `DVD Title` = ?, `Length` = ?, `Year` = ?, `Lead Actor` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Sequel` IS NULL) OR (`Sequel` = ?)) AND ((? = 1 AND `DVD Title` IS NULL) OR (`DVD Title` = ?)) AND ((? = 1 AND `Length` IS NULL) OR (`Length` = ?)) AND ((? = 1 AND `Year` IS NULL) OR (`Year` = ?)) AND ((? = 1 AND `Lead Actor` IS NULL) OR (`Lead Actor` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Sheet1` SET `Actor` = ?, `Sequel` = ?, `Title` = ?, `Length` = ?, `Year` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Actor` IS NULL) OR (`Actor` = ?)) AND ((? = 1 AND `Sequel` IS NULL) OR (`Sequel` = ?)) AND ((? = 1 AND `Title` IS NULL) OR (`Title` = ?)) AND ((? = 1 AND `Length` IS NULL) OR (`Length` = ?)) AND ((? = 1 AND `Year` IS NULL) OR (`Year` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Actor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Sequel", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Sequel", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DVD_Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DVD Title", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Title", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Length", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Length", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Year", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Lead_Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Lead Actor", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Actor", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Actor", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Actor", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Sequel", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Sequel", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Sequel", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Sequel", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_DVD_Title", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DVD Title", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_DVD_Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DVD Title", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Title", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Title", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Title", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Title", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Length", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Length", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Length", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Length", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Year", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Year", global::System.Data.OleDb.OleDbType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Lead_Actor", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Lead Actor", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Lead_Actor", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Lead Actor", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -998,7 +998,7 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Sequel, [DVD Title], Length, [Year], [Lead Actor] FROM Sheet1";
+            this._commandCollection[0].CommandText = "SELECT ID, Actor, Sequel, Title, Length, [Year] FROM Sheet1";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1006,7 +1006,7 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Database4DataSet1.Sheet1DataTable dataTable) {
+        public virtual int Fill(DvdDataSet.Sheet1DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1019,9 +1019,9 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Database4DataSet1.Sheet1DataTable GetData() {
+        public virtual DvdDataSet.Sheet1DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Database4DataSet1.Sheet1DataTable dataTable = new Database4DataSet1.Sheet1DataTable();
+            DvdDataSet.Sheet1DataTable dataTable = new DvdDataSet.Sheet1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1029,14 +1029,14 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database4DataSet1.Sheet1DataTable dataTable) {
+        public virtual int Update(DvdDataSet.Sheet1DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database4DataSet1 dataSet) {
+        public virtual int Update(DvdDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Sheet1");
         }
         
@@ -1059,41 +1059,41 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, bool Original_Sequel, string Original_DVD_Title, string Original_Length, global::System.Nullable<double> Original_Year, string Original_Lead_Actor) {
+        public virtual int Delete(int Original_ID, string Original_Actor, bool Original_Sequel, string Original_Title, string Original_Length, global::System.Nullable<double> Original_Year) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((bool)(Original_Sequel));
-            if ((Original_DVD_Title == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            if ((Original_Actor == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_DVD_Title));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Actor));
             }
-            if ((Original_Length == null)) {
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((bool)(Original_Sequel));
+            if ((Original_Title == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Length));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Title));
             }
-            if ((Original_Year.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((double)(Original_Year.Value));
-            }
-            else {
+            if ((Original_Length == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_Lead_Actor == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Length));
+            }
+            if ((Original_Year.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((double)(Original_Year.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Lead_Actor));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1115,31 +1115,31 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(bool Sequel, string DVD_Title, string Length, global::System.Nullable<double> Year, string Lead_Actor) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((bool)(Sequel));
-            if ((DVD_Title == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+        public virtual int Insert(string Actor, bool Sequel, string Title, string Length, global::System.Nullable<double> Year) {
+            if ((Actor == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(DVD_Title));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Actor));
             }
-            if ((Length == null)) {
+            this.Adapter.InsertCommand.Parameters[1].Value = ((bool)(Sequel));
+            if ((Title == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Length));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Title));
             }
-            if ((Year.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((double)(Year.Value));
-            }
-            else {
+            if ((Length == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Lead_Actor == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Length));
+            }
+            if ((Year.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((double)(Year.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Lead_Actor));
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1161,66 +1161,66 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(bool Sequel, string DVD_Title, string Length, global::System.Nullable<double> Year, string Lead_Actor, int Original_ID, bool Original_Sequel, string Original_DVD_Title, string Original_Length, global::System.Nullable<double> Original_Year, string Original_Lead_Actor) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((bool)(Sequel));
-            if ((DVD_Title == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+        public virtual int Update(string Actor, bool Sequel, string Title, string Length, global::System.Nullable<double> Year, int Original_ID, string Original_Actor, bool Original_Sequel, string Original_Title, string Original_Length, global::System.Nullable<double> Original_Year) {
+            if ((Actor == null)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(DVD_Title));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Actor));
             }
-            if ((Length == null)) {
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((bool)(Sequel));
+            if ((Title == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Length));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Title));
             }
-            if ((Year.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((double)(Year.Value));
-            }
-            else {
+            if ((Length == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Lead_Actor == null)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Length));
+            }
+            if ((Year.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(Year.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Lead_Actor));
-            }
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((bool)(Original_Sequel));
-            if ((Original_DVD_Title == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            if ((Original_Actor == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_DVD_Title));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Actor));
             }
-            if ((Original_Length == null)) {
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((bool)(Original_Sequel));
+            if ((Original_Title == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Length));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Title));
             }
-            if ((Original_Year.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((double)(Original_Year.Value));
-            }
-            else {
+            if ((Original_Length == null)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((Original_Lead_Actor == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Length));
+            }
+            if ((Original_Year.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((double)(Original_Year.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Lead_Actor));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1330,7 +1330,7 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(Database4DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DvdDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._sheet1TableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Sheet1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1349,7 +1349,7 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(Database4DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DvdDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._sheet1TableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Sheet1.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1367,7 +1367,7 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(Database4DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DvdDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._sheet1TableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Sheet1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1409,7 +1409,7 @@ namespace HlavkaDVDCapstone.Database4DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(Database4DataSet1 dataSet) {
+        public virtual int UpdateAll(DvdDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

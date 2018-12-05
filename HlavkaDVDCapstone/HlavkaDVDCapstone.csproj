@@ -51,30 +51,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database4DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Database4DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database4DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DetailForm.Designer.cs">
       <DependentUpon>DetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DvdDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DvdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ListViewForm.Designer.cs">
+      <DependentUpon>ListViewForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\DVD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DetailForm.resx">
       <DependentUpon>DetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ListViewForm.resx">
+      <DependentUpon>ListViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,16 +99,16 @@
     <None Include="Database4DataSet.xss">
       <DependentUpon>Database4DataSet.xsd</DependentUpon>
     </None>
-    <None Include="Database4DataSet1.xsc">
-      <DependentUpon>Database4DataSet1.xsd</DependentUpon>
+    <None Include="DvdDataSet.xsc">
+      <DependentUpon>DvdDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Database4DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database4DataSet1.Designer.cs</LastGenOutput>
+    <None Include="DvdDataSet.xsd">
       <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DvdDataSet.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Database4DataSet1.xss">
-      <DependentUpon>Database4DataSet1.xsd</DependentUpon>
+    <None Include="DvdDataSet.xss">
+      <DependentUpon>DvdDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,7 +129,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

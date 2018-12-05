@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using HlavkaDVDCapstone.Model;
 
 namespace HlavkaDVDCapstone
 {
@@ -37,14 +38,6 @@ namespace HlavkaDVDCapstone
 
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'database4DataSet.Sheet1' table. You can move, or remove it, as needed.
-            this.sheet1TableAdapter2.Fill(this.database4DataSet.Sheet1);
-            // TODO: This line of code loads data into the 'database4DataSet11.Sheet1' table. You can move, or remove it, as needed.
-            this.sheet1TableAdapter1.Fill(this.database4DataSet11.Sheet1);
-
-        }
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
@@ -53,8 +46,11 @@ namespace HlavkaDVDCapstone
 
         private void btn_DisplayDetails_Click(object sender, EventArgs e)
         {
-            DetailForm form = new DetailForm();
-            form.Show();
+            var dvdData = dataGridView2.CurrentRow.DataBoundItem;
+            DVD dvd = new DVD();
+            var tom = database4DataSet.Tables;
+            //DetailForm form = new DetailForm();
+            //form.Show();
         }
     }
 }

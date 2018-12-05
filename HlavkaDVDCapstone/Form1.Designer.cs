@@ -40,55 +40,44 @@ namespace HlavkaDVDCapstone
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+
+
+            this.database4DataSet2 = new HlavkaDVDCapstone.Database4DataSet2();
             this.database4DataSet = new HlavkaDVDCapstone.Database4DataSet();
             this.database4DataSet11 = new HlavkaDVDCapstone.Database4DataSet1();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.sheet1TableAdapter1 = new HlavkaDVDCapstone.Database4DataSet1TableAdapters.Sheet1TableAdapter();
             this.sheet1TableAdapter2 = new HlavkaDVDCapstone.Database4DataSetTableAdapters.Sheet1TableAdapter();
+            this.sheet1TableAdapter3 = new HlavkaDVDCapstone.Database4DataSet2TableAdapters.Sheet1TableAdapter();
+
             this.btn_DisplayDetails = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.lbl_DVDDatabase = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Length = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.database4DataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database4DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database4DataSet11BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView2
+            // bindingSource3
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView2.DataSource = this.bindingSource2;
-            this.dataGridView2.Location = new System.Drawing.Point(72, 170);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(801, 436);
-            this.dataGridView2.TabIndex = 0;
+            this.bindingSource3.DataMember = "Sheet1";
+            this.bindingSource3.DataSource = this.database4DataSet2;
             // 
-            // dataGridViewTextBoxColumn1
+            // database4DataSet2
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "DVD Title";
-            this.dataGridViewTextBoxColumn1.HeaderText = "DVD Title";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Year";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Year";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // bindingSource2
-            // 
-            this.bindingSource2.DataMember = "Sheet1";
-            this.bindingSource2.DataSource = this.database4DataSet;
+            this.database4DataSet2.DataSetName = "Database4DataSet2";
+            this.database4DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // database4DataSet
             // 
@@ -105,6 +94,11 @@ namespace HlavkaDVDCapstone
             this.bindingSource1.DataMember = "Sheet1";
             this.bindingSource1.DataSource = this.database4DataSet11;
             // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "Sheet1";
+            this.bindingSource2.DataSource = this.database4DataSet;
+            // 
             // sheet1TableAdapter1
             // 
             this.sheet1TableAdapter1.ClearBeforeFill = true;
@@ -112,6 +106,10 @@ namespace HlavkaDVDCapstone
             // sheet1TableAdapter2
             // 
             this.sheet1TableAdapter2.ClearBeforeFill = true;
+            // 
+            // sheet1TableAdapter3
+            // 
+            this.sheet1TableAdapter3.ClearBeforeFill = true;
             // 
             // btn_DisplayDetails
             // 
@@ -144,20 +142,53 @@ namespace HlavkaDVDCapstone
             this.lbl_DVDDatabase.TabIndex = 3;
             this.lbl_DVDDatabase.Text = "Hlavka DVD Database";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "DVD Title";
+            this.dataGridViewTextBoxColumn1.HeaderText = "DVD Title";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // Length
+            // 
+            this.Length.DataPropertyName = "Length";
+            this.Length.HeaderText = "Length";
+            this.Length.Name = "Length";
+            this.Length.Visible = false;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // database4DataSet11BindingSource
+            // 
+            this.database4DataSet11BindingSource.DataSource = this.database4DataSet11;
+            this.database4DataSet11BindingSource.Position = 0;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(971, 835);
             this.Controls.Add(this.lbl_DVDDatabase);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_DisplayDetails);
-            this.Controls.Add(this.dataGridView2);
             this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database4DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database4DataSet11BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,18 +208,23 @@ namespace HlavkaDVDCapstone
         private BindingSource database4DataSet1BindingSource;
       //  private Database4DataSet2 database4DataSet2;
         private BindingSource sheet1BindingSource1;
-        private DataGridView dataGridView2;
         private Database4DataSet1 database4DataSet11;
         private BindingSource bindingSource1;
         private Database4DataSet1TableAdapters.Sheet1TableAdapter sheet1TableAdapter1;
         private Database4DataSet database4DataSet;
         private BindingSource bindingSource2;
         private Database4DataSetTableAdapters.Sheet1TableAdapter sheet1TableAdapter2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private Button btn_DisplayDetails;
         private Button btn_Exit;
         private Label lbl_DVDDatabase;
+        private Database4DataSet2 database4DataSet2;
+        private BindingSource bindingSource3;
+        private Database4DataSet2TableAdapters.Sheet1TableAdapter sheet1TableAdapter3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn Length;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private BindingSource database4DataSet11BindingSource;
         // private Database4DataSet2TableAdapters.Sheet1TableAdapter sheet1TableAdapter1;
     }
 }
