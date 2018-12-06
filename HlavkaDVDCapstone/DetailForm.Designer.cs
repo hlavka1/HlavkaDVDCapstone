@@ -55,7 +55,7 @@
             // btn_Exit
             // 
             this.btn_Exit.BackColor = System.Drawing.Color.AliceBlue;
-            this.btn_Exit.Font = new System.Drawing.Font("Baskerville Old Face", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.Location = new System.Drawing.Point(343, 754);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(359, 80);
