@@ -46,6 +46,7 @@
             // 
             this.lbl_DVDDetails.AutoSize = true;
             this.lbl_DVDDetails.Font = new System.Drawing.Font("Baskerville Old Face", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DVDDetails.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_DVDDetails.Location = new System.Drawing.Point(297, 34);
             this.lbl_DVDDetails.Name = "lbl_DVDDetails";
             this.lbl_DVDDetails.Size = new System.Drawing.Size(558, 110);
@@ -54,8 +55,9 @@
             // 
             // btn_Exit
             // 
-            this.btn_Exit.BackColor = System.Drawing.Color.AliceBlue;
+            this.btn_Exit.BackColor = System.Drawing.Color.Yellow;
             this.btn_Exit.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.Blue;
             this.btn_Exit.Location = new System.Drawing.Point(343, 754);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(359, 80);
@@ -66,7 +68,9 @@
             // 
             // txtbx_DVDTitle
             // 
+            this.txtbx_DVDTitle.BackColor = System.Drawing.Color.Yellow;
             this.txtbx_DVDTitle.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_DVDTitle.ForeColor = System.Drawing.Color.Blue;
             this.txtbx_DVDTitle.Location = new System.Drawing.Point(379, 231);
             this.txtbx_DVDTitle.Name = "txtbx_DVDTitle";
             this.txtbx_DVDTitle.Size = new System.Drawing.Size(553, 49);
@@ -74,7 +78,9 @@
             // 
             // txtbx_Sequel
             // 
+            this.txtbx_Sequel.BackColor = System.Drawing.Color.Yellow;
             this.txtbx_Sequel.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Sequel.ForeColor = System.Drawing.Color.Blue;
             this.txtbx_Sequel.Location = new System.Drawing.Point(379, 320);
             this.txtbx_Sequel.Name = "txtbx_Sequel";
             this.txtbx_Sequel.Size = new System.Drawing.Size(487, 49);
@@ -84,6 +90,7 @@
             // 
             this.lbl_DVDTitle.AutoSize = true;
             this.lbl_DVDTitle.Font = new System.Drawing.Font("Baskerville Old Face", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DVDTitle.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_DVDTitle.Location = new System.Drawing.Point(95, 232);
             this.lbl_DVDTitle.Name = "lbl_DVDTitle";
             this.lbl_DVDTitle.Size = new System.Drawing.Size(203, 45);
@@ -92,7 +99,9 @@
             // 
             // txtbx_Length
             // 
+            this.txtbx_Length.BackColor = System.Drawing.Color.Yellow;
             this.txtbx_Length.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Length.ForeColor = System.Drawing.Color.Blue;
             this.txtbx_Length.Location = new System.Drawing.Point(379, 411);
             this.txtbx_Length.Name = "txtbx_Length";
             this.txtbx_Length.Size = new System.Drawing.Size(476, 49);
@@ -100,7 +109,9 @@
             // 
             // txtbx_Year
             // 
+            this.txtbx_Year.BackColor = System.Drawing.Color.Yellow;
             this.txtbx_Year.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Year.ForeColor = System.Drawing.Color.Blue;
             this.txtbx_Year.Location = new System.Drawing.Point(379, 519);
             this.txtbx_Year.Name = "txtbx_Year";
             this.txtbx_Year.Size = new System.Drawing.Size(499, 49);
@@ -108,7 +119,9 @@
             // 
             // txtbx_LeadActor
             // 
+            this.txtbx_LeadActor.BackColor = System.Drawing.Color.Yellow;
             this.txtbx_LeadActor.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_LeadActor.ForeColor = System.Drawing.Color.Blue;
             this.txtbx_LeadActor.Location = new System.Drawing.Point(379, 615);
             this.txtbx_LeadActor.Name = "txtbx_LeadActor";
             this.txtbx_LeadActor.Size = new System.Drawing.Size(518, 49);
@@ -118,6 +131,7 @@
             // 
             this.lbl_LeadActor.AutoSize = true;
             this.lbl_LeadActor.Font = new System.Drawing.Font("Baskerville Old Face", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_LeadActor.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_LeadActor.Location = new System.Drawing.Point(95, 616);
             this.lbl_LeadActor.Name = "lbl_LeadActor";
             this.lbl_LeadActor.Size = new System.Drawing.Size(210, 45);
@@ -128,6 +142,7 @@
             // 
             this.lbl_Year.AutoSize = true;
             this.lbl_Year.Font = new System.Drawing.Font("Baskerville Old Face", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Year.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_Year.Location = new System.Drawing.Point(95, 524);
             this.lbl_Year.Name = "lbl_Year";
             this.lbl_Year.Size = new System.Drawing.Size(260, 45);
@@ -138,6 +153,7 @@
             // 
             this.lbl_Length.AutoSize = true;
             this.lbl_Length.Font = new System.Drawing.Font("Baskerville Old Face", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Length.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_Length.Location = new System.Drawing.Point(95, 425);
             this.lbl_Length.Name = "lbl_Length";
             this.lbl_Length.Size = new System.Drawing.Size(254, 45);
@@ -148,6 +164,7 @@
             // 
             this.lbl_Sequel.AutoSize = true;
             this.lbl_Sequel.Font = new System.Drawing.Font("Baskerville Old Face", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Sequel.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_Sequel.Location = new System.Drawing.Point(95, 325);
             this.lbl_Sequel.Name = "lbl_Sequel";
             this.lbl_Sequel.Size = new System.Drawing.Size(152, 45);
@@ -156,7 +173,7 @@
             // 
             // DetailForm
             // 
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(1076, 881);
             this.Controls.Add(this.lbl_Sequel);
             this.Controls.Add(this.lbl_Length);
