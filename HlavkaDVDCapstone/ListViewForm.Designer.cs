@@ -100,6 +100,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridListView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridListView.GridColor = System.Drawing.Color.Yellow;
             this.dataGridListView.Location = new System.Drawing.Point(34, 191);
             this.dataGridListView.Name = "dataGridListView";
             this.dataGridListView.RowTemplate.Height = 28;
