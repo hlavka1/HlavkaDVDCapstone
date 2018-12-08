@@ -48,6 +48,7 @@
             this.btn_DetailForm = new System.Windows.Forms.Button();
             this.sheet1TableAdapter1 = new HlavkaDVDCapstone.DvdDataSetTableAdapters.Sheet1TableAdapter();
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sheet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridListView)).BeginInit();
@@ -77,8 +78,8 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Baskerville Old Face", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Yellow;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridListView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -99,7 +100,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridListView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridListView.Location = new System.Drawing.Point(31, 39);
+            this.dataGridListView.Location = new System.Drawing.Point(34, 191);
             this.dataGridListView.Name = "dataGridListView";
             this.dataGridListView.RowTemplate.Height = 28;
             this.dataGridListView.Size = new System.Drawing.Size(1071, 695);
@@ -172,7 +173,7 @@
             this.btn_DetailForm.BackColor = System.Drawing.Color.Yellow;
             this.btn_DetailForm.Font = new System.Drawing.Font("Baskerville Old Face", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DetailForm.ForeColor = System.Drawing.Color.Blue;
-            this.btn_DetailForm.Location = new System.Drawing.Point(67, 776);
+            this.btn_DetailForm.Location = new System.Drawing.Point(68, 931);
             this.btn_DetailForm.Name = "btn_DetailForm";
             this.btn_DetailForm.Size = new System.Drawing.Size(268, 66);
             this.btn_DetailForm.TabIndex = 1;
@@ -189,7 +190,7 @@
             this.btn_Exit.BackColor = System.Drawing.Color.Yellow;
             this.btn_Exit.Font = new System.Drawing.Font("Baskerville Old Face", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.Blue;
-            this.btn_Exit.Location = new System.Drawing.Point(820, 776);
+            this.btn_Exit.Location = new System.Drawing.Point(834, 931);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(224, 66);
             this.btn_Exit.TabIndex = 2;
@@ -197,12 +198,24 @@
             this.btn_Exit.UseVisualStyleBackColor = false;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(112, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(946, 110);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Hlavka DVD Database";
+            // 
             // ListViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(1145, 883);
+            this.ClientSize = new System.Drawing.Size(1145, 1039);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_DetailForm);
             this.Controls.Add(this.dataGridListView);
@@ -217,6 +230,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvdDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sheet1BindingSource1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -239,5 +253,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lengthDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }
